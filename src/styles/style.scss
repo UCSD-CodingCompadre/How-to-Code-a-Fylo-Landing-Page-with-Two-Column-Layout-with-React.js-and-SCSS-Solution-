@@ -52,3 +52,203 @@ body
         }
     }
 }
+
+.get-started
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.get-started-component
+{
+    margin-top: 20px;
+    width: 300px;
+    .heading
+    {
+        color: $darkBlue;
+        font-family: $headingFontFamily;
+        font-size: $fontSize;
+        font-weight: 700;
+        text-align: center;
+    }
+    .body
+    {
+        color: $blue;
+        font-family: $bodyFontFamily;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .flex-container
+    {
+        margin-top: 10px;
+        .container
+        {
+            .input-container
+            {
+                border: 1px solid $darkBlue;
+                border-radius: 5px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                padding-right: 10px;
+                padding-top: 5px;
+                width: 100%;
+                input
+                {
+                    border: none;
+                    color: $darkBlue;
+                    font-family: $bodyFontFamily;
+                    width: 100%;
+                }
+            }
+            .error-text
+            {
+                color: red;
+                font-size: 14px;
+                font-family: $bodyFontFamily;
+                margin-top: 5px;
+            }
+        }
+        button
+        {
+            background-color: $brightBlue;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            height: 30px;
+            margin-top: 5px;
+            width: 100%;
+            &:hover
+            {
+                filter: brightness(1.5);
+            }
+        }
+    }
+}
+
+.image-component
+{
+    height: 300px;
+    width: 300px;
+}
+
+.pattern-mobile
+{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.testimonials
+{
+    align-items: center;
+    background-color: $lightGray;
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+}
+
+.testimonials-component
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 300px;
+    .heading
+    {
+        color: $darkBlue;
+        font-family: $headingFontFamily;
+        font-size: $fontSize;
+        font-weight: 700;
+        text-align: center;
+    }
+    .body
+    {
+        color: $blue;
+        font-family: $bodyFontFamily;
+        font-size: 14px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .flex-container
+    {
+        align-items: center;
+        border-bottom: 1px solid $cyan;
+        cursor: pointer;
+        display: flex;
+        margin-top: 20px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: fit-content;
+        &:hover
+        {
+            filter: brightness(1.5);
+        }
+        .link
+        {
+            color: $cyan;
+            font-family: $bodyFontFamily;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        .arrow
+        {
+            height: 20px;
+            margin-left: 5px;
+            width: 20px;
+        }
+    }
+    .card
+    {
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 15px;
+        width: 250px;
+        .quotes
+        {
+            height: 20px;
+            width: 20px;
+        }
+        .body
+        {
+            color: $darkBlue;
+            font-family: $headingFontFamily;
+            font-size: 14px;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .card-flex-container
+        {
+            align-items: center;
+            display: flex;
+            margin-top: 10px;
+            .avatar
+            {
+                border-radius: 100%;
+                height: 40px;
+                width: 40px;
+            }
+            .container
+            {
+                margin-left: 10px;
+                .name
+                {
+                    color: $darkBlue;
+                    font-family: $headingFontFamily;
+                    font-size: 14px;
+                }
+                .title
+                {
+                    color: $darkBlue;
+                    font-family: $headingFontFamily;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
