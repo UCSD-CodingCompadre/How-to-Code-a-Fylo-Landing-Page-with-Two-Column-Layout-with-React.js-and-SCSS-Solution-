@@ -27,28 +27,29 @@ export const Home = () =>
                 <GetStarted />
             </section>
 
-            {/* Hold the bg pattern to divide the sections */}
+            {/* Hold the bg pattern to divide the mobile sections */}
             <img 
             alt="background-pattern"
             className="pattern-mobile" 
             src={BackgroundMobile} 
             />
 
-            {/* Hold the bg pattern to divide the sections */}
+            {/* Hold the bg pattern to divide the desktop sections */}
             <img 
             alt="background-pattern"
             className="pattern-desktop" 
             src={BackgroundDesktop} 
             />
 
-            {/* Hold the container for the testimonial */}
+            {/* Hold a wrapper for the desktop view */}
             <div 
             className="testimonials-wrapper"
             >
+                
+                {/* Hold the container for the testimonials */}
                 <section 
                 className="testimonials"
                 >
-
                     <Image 
                     imageSource={Illustration2}
                     />
@@ -56,11 +57,12 @@ export const Home = () =>
                 </section>
             </div>
 
+            {/* Hold a wrapper for the desktop view */}
             <div className="early-access-wrapper">
-
                 <EarlyAccess />
             </div>
 
+            {/* Hold a wrapper for the desktop view */}
             <div 
             className="footer-wrapper"
             >

@@ -5,15 +5,20 @@ export const Testimonials = () =>
 {
     return (
         <>
+
+            {/* Hold the testimonials component */}
             <div 
             className="testimonials-component"
             >
+
+                {/* Hold the heading text */}
                 <p 
                 className="heading"
                 >
                     Stay productive, wherever you are
                 </p>
 
+                {/* Hold the body text */}
                 <p 
                 className="body"
                 >
@@ -21,6 +26,7 @@ export const Testimonials = () =>
                     covered for all of your file storage needs.
                 </p>
 
+                {/* Hold the body text */}
                 <p 
                 className="body"
                 >
@@ -28,14 +34,19 @@ export const Testimonials = () =>
                     live collaboration. No email attachments required!
                 </p>
 
+                {/* Hold the flex container */}
                 <div 
                 className="flex-container"
                 >
+
+                    {/* Hold the link text */}
                     <p 
                     className="link"
                     >
                         See how Fylo works
                     </p>
+
+                    {/* Hold the arrow image */}
                     <img  
                     alt="arrow"
                     className="arrow" 
@@ -43,6 +54,7 @@ export const Testimonials = () =>
                     />
                 </div>
 
+                {/* Render the testimonial card */}
                 <TestimonialCard />
             </div>
         </>
