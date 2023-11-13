@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import validator from 'validator';
 
-export const GetStarted = () =>
+export const EarlyAccess = () =>
 {
 
     const [email, setEmail] = useState('');
@@ -13,27 +13,28 @@ export const GetStarted = () =>
         setEmailIsValid(validator.isEmail(email));
     }
 
-    return (
+    return(
         <>
             <div 
-            className="get-started-component"
+            className="early-access-component"
             >
-                <p 
-                className="heading"
-                >
-                    All your files in one secure location, accessible anywhere.
-                </p>
-
-                <p 
-                className="body"
-                >
-                    Fylo stores your most important files in one secure location. 
-                    Access them wherever you need, share and collaborate with friends, 
-                    family, and co-workers.   
-                </p>
-
                 <div 
-                className="flex-container"
+                className="left-container"
+                >
+                    <p 
+                    className="heading"
+                    >                              
+                        Get early access today
+                    </p>
+                    <p 
+                    className="body"
+                    >
+                        It only takes a minute to sign up and our free starter tier is extremely generous. 
+                        If you have any questions, our support team would be happy to help you.
+                    </p>
+                </div>
+                <div 
+                className="right-container"
                 >
                     <div 
                     className="container"
@@ -43,7 +44,7 @@ export const GetStarted = () =>
                         >
                             <input  
                             onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Enter your email"
+                            placeholder="email@example.com"
                             type="text"
                             value={email}
                             />
@@ -59,7 +60,7 @@ export const GetStarted = () =>
                     <button
                     onClick={checkEmail}
                     >
-                        Get Started
+                        Get Started For Free
                     </button>
                 </div>
             </div>

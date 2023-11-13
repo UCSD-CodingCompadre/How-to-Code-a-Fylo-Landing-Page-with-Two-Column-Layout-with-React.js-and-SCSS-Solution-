@@ -78,6 +78,9 @@ body {
   font-family: "Open Sans", sans-serif;
   width: 100%;
 }
+.get-started-component .flex-container .container .input-container input:focus {
+  outline: none;
+}
 .get-started-component .flex-container .container .error-text {
   color: red;
   font-size: 14px;
@@ -95,6 +98,7 @@ body {
   width: 100%;
 }
 .get-started-component .flex-container button:hover {
+  cursor: pointer;
   filter: brightness(1.5);
 }
 
@@ -104,6 +108,12 @@ body {
 }
 
 .pattern-mobile {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.pattern-desktop {
+  display: none;
   margin-top: 20px;
   width: 100%;
 }
@@ -150,6 +160,7 @@ body {
   width: fit-content;
 }
 .testimonials-component .flex-container:hover {
+  cursor: pointer;
   filter: brightness(1.5);
 }
 .testimonials-component .flex-container .link {
@@ -203,4 +214,217 @@ body {
   color: hsl(243, 87%, 12%);
   font-family: "Raleway", sans-serif;
   font-size: 14px;
+}
+
+.early-access-component {
+  align-items: center;
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 37.5px;
+  padding-right: 37.5px;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+.early-access-component .left-container .heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.early-access-component .left-container .body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.early-access-component .right-container {
+  margin-top: 10px;
+}
+.early-access-component .right-container .container .input-container {
+  background-color: white;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: 250px;
+}
+.early-access-component .right-container .container .input-container input {
+  border: none;
+  color: hsl(243, 87%, 12%);
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+.early-access-component .right-container .container .input-container input:focus {
+  outline: none;
+}
+.early-access-component .right-container .container .error-text {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+}
+.early-access-component .right-container button {
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  height: 30px;
+  margin-top: 5px;
+  width: 250px;
+}
+.early-access-component .right-container button:hover {
+  cursor: pointer;
+  filter: brightness(1.5);
+}
+
+.footer-component {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding-bottom: 40px;
+  padding-left: 37.5px;
+  padding-right: 37.5px;
+  padding-top: 40px;
+  width: 100%;
+}
+.footer-component .flex-container .container {
+  margin-top: 20px;
+}
+.footer-component .flex-container .container .text-container {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+.footer-component .flex-container .container .text-container .body {
+  margin-left: 5px;
+}
+.footer-component .flex-container .container .heading {
+  margin-top: 20px;
+}
+.footer-component .flex-container .container .heading:hover {
+  cursor: pointer;
+  color: hsl(224, 93%, 58%);
+}
+.footer-component .flex-container .container .body {
+  margin-top: 5px;
+}
+.footer-component .flex-container .container .body:hover {
+  cursor: pointer;
+  color: hsl(224, 93%, 58%);
+}
+.footer-component .flex-container .flex-container {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer-component .flex-container .flex-container .round-container {
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-component {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  .get-started {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  .get-started-component {
+    margin-top: 0px;
+  }
+  .testimonials {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  .testimonials-wrapper {
+    background-color: hsl(240, 75%, 98%);
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .pattern-mobile {
+    display: none;
+  }
+  .pattern-desktop {
+    display: block;
+    height: 100px;
+  }
+  .early-access-component {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  .early-access-component .left-container {
+    width: 300px;
+  }
+  .early-access-component .right-container {
+    width: 300px;
+  }
+  .early-access-wrapper {
+    background-color: hsl(238, 22%, 44%);
+    width: 100%;
+  }
+  .footer-component {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  .footer-component .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .footer-component .flex-container .container {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .footer-component .flex-container .container p {
+    margin: 0px !important;
+  }
+  .footer-component .flex-container .container div {
+    margin: 0px !important;
+  }
+  .footer-component .flex-container .container .body {
+    margin-top: 10px !important;
+  }
+  .footer-component .flex-container .container img {
+    margin-top: 10px !important;
+    padding-right: 5px !important;
+  }
+  .footer-component .flex-container .flex-container {
+    align-items: start;
+    margin: 0px !important;
+  }
+  .footer-wrapper {
+    background-color: hsl(243, 87%, 12%);
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
